@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Lesson 7 - IMAGE MODIFIER</title>
+</head>
+<body>
+  
+  <style>
+
+    .google-search-input{
+      margin-top: 5px;
+      padding-left: 15px;
+      width: 240px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 100px;
+      border-style: solid;
+      border-color: rgb(201, 201, 201);
+      border-width: 1px;
+      box-shadow: 0 5px 10px 0 #dcdcdc;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10px;
+    }
+
+    .b {
+      display: flex;
+      justify-content: center;
+    }
+
+    .all-div-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .email-text{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10px;
+      margin-bottom: 3px;
+      margin-top: 20px;
+      margin-left: 1px;
+    }
+
+    .search-bar{
+      width: 250px;
+      border-radius: 2px;
+      border: solid;
+      border-color: rgb(183, 183, 183);
+      border-width: 1px;
+      box-shadow: 0px 3px 8px rgb(210, 210, 210);
+      padding: 5px 5px 5px 5px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10px;
+    }
+
+    .privacy-text{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: rgb(109, 109, 109);
+    }
+
+    .agree-button{
+      background-color: rgb(34, 78, 237);
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      width: 150px;
+      height: 30px;
+      border-radius: 20px;
+      border: none;
+      font-size: 10px;
+      cursor: pointer;
+      transition: 0.15s;
+    }
+
+    .agree-button:active{
+      opacity: 0.5;
+    }
+
+    .twitter-container{
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .channel-picture{
+      width: 35px;
+      border-radius: 50%;
+    }
+
+    .text{
+      font-family: arial;
+      color: rgb(129, 129, 129);
+      padding-left: 10px;
+      font-size: 13px;
+      padding-right: 50px;
+    }
+
+    .tweet-button{
+      border-radius: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      padding: 5px 10px 5px 10px;
+      border: none;
+      background-color: rgb(48, 142, 242);
+      color: white;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+
+    .tweet-button:active{
+      opacity: 0.5;
+    }
+
+  </style>
+
+  <div class="b">
+    <input class="google-search-input" type="text" placeholder="Search Google or type a URL">
+  </div>
+
+  <div class="all-div-container">
+    <div>
+      <div class="email-text">
+        Email
+      </div>
+      <div >
+        <input class="search-bar" type="text" placeholder="Search">
+      </div>
+    </div>
+    <div class="privacy-text">
+      By clicking Agree & Join, you agree to the Privacy Policy.
+    </div>
+    <button class="agree-button">
+      Agree & Join
+    </button>
+  </div>
+
+  <div class="twitter-container">
+    <div>
+      <img class="channel-picture" src="channel-1.jpeg">
+    </div>
+    <div class="text">
+      What's Happening?
+    </div>
+    <div>
+      <button class="tweet-button">
+        Tweet
+      </button>
+    </div>
+  </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML LESSON 8 - DISPLAY BLOCK AND INLINE BLOCK</title>
+</head>
+<body>
+
+  <style>
+
+    .container, .delivery-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .names{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      color: white;
+      border-radius: 5px;
+      width: 120px;
+      height: 30px;
+      margin-bottom: 10px;
+      padding: 0 0 0 5px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgb(192, 192, 192);
+      box-shadow: 0 5px 10px -3px rgb(192, 191, 191);
+      
+    }
+
+    .email{
+      width: 250px;
+      border-radius: 5px;
+      height: 30px;
+      font-size: 13px;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: 10px;
+      padding: 0 0 0 5px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgb(192, 192, 192);
+      box-shadow: 0 5px 10px -3px rgb(192, 191, 191);
+    }
+
+    .sign-up-button{
+      width: 256px;
+      border-radius: 5px;
+      height: 40px;
+      font-size: 13px;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 0 0 0 5px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgb(215, 215, 215);
+      box-shadow: 0 5px 15px -3px rgb(192, 191, 191);
+      background-color: rgb(62, 88, 219);
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.15s;
+    }
+
+    .sign-up-button:active{
+      opacity: 0.5;
+    }
+
+    .names::placeholder, .email::placeholder{
+      color: rgb(180, 180, 180);
+    }
+
+    .delivery-container{
+      align-items: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .request-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .request-text{
+      font-weight: bold;
+    }
+
+    .input-class{
+      border-radius: 5px;
+      margin: 3px 0 3px 0;
+      width: 250px;
+      border-style: solid;
+      border-color: rgb(189, 189, 189);
+      border-width: 1px;
+      padding: 5px 0 5px 7px;
+      background-color: rgb(243, 243, 243);
+      font-size: 12px;
+    }
+
+
+     .request-button,
+    .schedule-button{
+      width: 120px;
+      margin: 5px 2px 5px 0;
+      font-size: 11px;
+      padding: 8px 0px 8px 0;
+    }
+
+    .request-button{
+      background-color: black;
+      color: white;
+      border: none;
+    }
+
+    .schedule-button{
+      background-color: rgb(225, 224, 224);
+      border: none;
+      margin-left: 11px;
+    }
+
+
+  </style>
+  
+  <div class="container">
+    <div>
+      <input class="names" type="text" placeholder="First name">
+      <input class="names" type="text" placeholder="Last name">
+    </div>
+    <input class="email" type="text" placeholder="Email">
+    <button class="sign-up-button">
+      Sign Up
+    </button>
+  </div>
+
+  <div class="delivery-container">
+    <div class="request-container">
+      <p class="request-text">
+      Request a ride now
+      </p>
+    <input class="input-class" type="text" placeholder="Enter pickup location">
+    <input class="input-class" type="text" placeholder="Enter destination">
+    <div>  
+        <button class="request-button"> Request Now</button>
+        <button class="schedule-button">Schedule for later</button>
+    </div>
+   
+    
+
+ 
+ </body>
+</html>

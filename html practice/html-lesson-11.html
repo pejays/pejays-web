@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML LESSON 11 - t</title>
+</head>
+<body>
+  
+  <style>
+
+    .container{
+      display: flex;
+      flex-direction: row;
+    }
+    .two-px{
+      background-color: blue;
+      width: 200px;
+    }
+
+    .seventyfive-px{
+      width: 75px;
+      background-color: red;
+    }
+    
+    .col-container{
+      display: grid;
+      grid-template-columns: 50px 1fr 75px;
+    }
+
+    .col-one{
+      background-color: blue;
+    }
+
+    .col-two{
+      background-color: red;
+    }
+
+    .col-three{
+      background-color: blue;
+    }
+  </style>
+
+    <div class="container">
+      <div class="two-px">200px</div>
+      <div class="seventyfive-px">75px</div>
+    </div>
+
+    
+
+    <div class="col-container">
+      <div class="col-one">col1</div>
+      <div class="col-two">col2</div>
+      <div class="col-three">col3</div>
+    </div>
+</body>
+</html>

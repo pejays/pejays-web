@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <legend>Personal Info</legend>
+    <label for="fname" style="cursor: pointer;">Firstname:</label>
+    <input type="text" name="fname" id="fname"><br>
+    <label for="lname" style="cursor: pointer;">Lastname:</label>
+    <input type="text" name="lname" id="lname"><br>
+    <div style="display: flex; align-items: center; vertical-align: middle;">
+      <label for="male" style="cursor: pointer;">Male</label>
+      <input type="radio" name="sex" id="male" style="cursor: pointer; margin: 0 0 0 5px;">
+      <label for="female" style="cursor: pointer; margin-left: 5px;">Female</label>
+      <input type="radio" name="sex" id="female" style="cursor: pointer; margin: 0 0 0 5px;"><br>
+    </div>
+    
+
+    <span>Talent: </span>
+    <label for="singing">Singing</label>
+    <input type="checkbox" id="singing" style="margin: 0; vertical-align: middle;">
+    <label for="dancing">Dancing</label>
+    <input type="checkbox" id="dancing" style="margin: 0; vertical-align: middle;">
+    <label for="drawing">Drawing</label>
+    <input type="checkbox" id="drawing" style="margin: 0; vertical-align: middle;"><br>
+
+    <label for="program">Programs: </label>
+    <select name="program" id="program">
+      <option value="">Institute of Computing</option>
+      <option value="">Institute of Teacher Education</option>
+      <option value="">Institute of Aquatic and Applied Sciences</option>
+      <option value="">Institute of Leadership, Entrepreneurship, and Good Governance</option>
+    </select><br>
+
+    <textarea style="width: 200px; height: 200px; resize: none;"></textarea><br>
+    <button type="button" onclick="alert('Hi Friend!')" style="width: 57px; height: 20px;">Submit</button>
+    <br><input type="submit">
+
+
+      <input list="browsers">
+      <datalist id="browsers">
+      <option value="Institute of Computing"></option>
+      <option value="Institute of Teacher Education"></option>
+      <option value="Institute of Aquatic and Applied Sciences"></option>
+      <option value="Institute of Leadership, Entrepreneurship, and Good Governance"></option>
+      </datalist>
+
+      <input type="password">
+      <input type="number">
+
+      
+
+    
+    
+
+    </fieldset>
+  </form>
+</body>
+</html>

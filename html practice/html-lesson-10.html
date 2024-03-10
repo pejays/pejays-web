@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML LESSON 10 - NESTED DIVS</title>
+</head>
+<body>
+  
+  <style>
+
+    .main-div-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .div-container{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border-style: solid;
+      margin: 10px 0 10px 0;
+      border-color: rgb(192, 192, 192);
+      border-width: 1px;
+      box-shadow: 0 5px 5px -2px rgb(211, 211, 211);
+      border-radius: 5px;
+      padding: 5px 0 0 6px;
+    }
+
+    .text-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 10px;
+    }
+
+    .channel-picture{
+      width: 50px;
+      border-radius: 25px;
+    }
+
+    p.text-oliver, p.text-cat, p.text-popular{
+      margin: 0 0 0 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      padding: 1px 1px 1px 1px;
+    }
+
+    .text-oliver{
+      font-weight: bold;
+    }
+
+    p.text-popular, p.text-cat{
+      color: rgb(158, 158, 158);
+    }
+
+    .follow-button{
+      border-radius: 5px;
+      width: 50px;
+      padding: 3px 5px 3px 5px;
+      background-color: #1DA1F2;
+      color: white;
+      border: none;
+      margin-left: 150px;
+      margin-right: 10px;
+      cursor: pointer;
+      transition: 0.15s;
+    }
+
+    .follow-button:active{
+      opacity: 0.5;
+    }
+
+    .yt-container{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .thumbnail{
+      width: 150px;
+      margin: 0 0 0 0;
+    }
+
+    .yt-text-container{
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+    }
+
+    .title-text, .channel-text, .video-stats{
+      margin: 0 0 0 0;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 3px 3px 3px 3px;
+    }
+
+    .title-text{
+      font-weight: bold;
+      font-size: 12px;
+    }
+
+    .channel-text{
+      font-size: 11px;
+      color: rgb(137, 137, 137);
+    }
+
+    .video-stats{
+      font-size: 11px;
+      color: rgb(137, 137, 137);
+    }
+
+    .main-yt-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+  </style>
+
+  <div class="main-div-container">
+    <div class="div-container">
+      <div class="channel-picture-container">
+        <img class="channel-picture" src="channel-1.jpeg">
+      </div>
+      <div class="text-container">
+        <p class="text-oliver">oliver</p>
+        <p class="text-cat">the cat</p>
+        <p class="text-popular">Popular</p>
+      </div>
+      <div style="display: inline-block;">
+        <button class="follow-button">Follow</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="main-yt-container">
+      <div class="yt-container">
+      <div>
+        <img class="thumbnail" src="thumbnail-1.webp">
+      </div>
+      <div class="yt-text-container">
+        <p class="title-text">
+          How to compete against CS degrees (as a self-taught dev)
+        </p>
+        <p class="channel-text">
+          SuperSimpleDev
+        </p>
+        <p class="video-stats">
+          1.5K views &centerdot; 4 months ago
+        </p>
+      </div>
+    </div>
+
+    <div class="yt-container">
+      <div>
+        <img class="thumbnail" src="thumbnail-1.webp">
+      </div>
+      <div class="yt-text-container">
+        <p class="title-text">
+          How to compete against CS degrees (as a self-taught dev)
+        </p>
+        <p class="channel-text">
+          SuperSimpleDev
+        </p>
+        <p class="video-stats">
+          1.5K views &centerdot; 4 months ago
+        </p>
+      </div>
+    </div>
+
+    <div class="yt-container">
+      <div>
+        <img class="thumbnail" src="thumbnail-1.webp">
+      </div>
+      <div class="yt-text-container">
+        <p class="title-text">
+          How to compete against CS degrees (as a self-taught dev)
+        </p>
+        <p class="channel-text">
+          SuperSimpleDev
+        </p>
+        <p class="video-stats">
+          1.5K views &centerdot; 4 months ago
+        </p>
+      </div>
+    </div>
+  </div>
+
+  
+
+</body>
+</html>

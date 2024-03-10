@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML LESSON 9 - DIV CONTAINER</title>
+</head>
+<body>
+  
+  <style>
+    .yt-container{
+      background-color: rgb(47, 47, 47);
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 375px;
+      padding: 2px 0 2px 10px;
+    }
+
+    .yt{
+      font-size: 20px;
+      font-weight: 550;
+    }
+
+    .music{
+      color: rgb(175, 175, 175);
+    }
+
+    .main-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .twitter-container{
+      width: 280px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      padding: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgb(197, 197, 197);
+      border-radius: 10px;
+      box-shadow: 0 0px 10px 3px rgb(207, 207, 207);
+    }
+
+    .twitter-text{
+      padding-left: 10px;
+      margin-right: 50px;
+      font-size: 13px;
+      color: rgb(139, 139, 139);
+    }
+
+    .channel-picture{
+      width: 50px;
+      border-radius: 50%;
+    }
+
+    .tweet-button{
+      background-color: rgb(42, 114, 230);
+      border: none;
+      border-radius: 15px;
+      padding: 5px 10px 5px 10px;
+      color: white;
+      font-size: 13px;
+    }
+
+    .fb-main-container{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .facebook-container{
+      border: solid;
+      display: inline-block;
+      border-style: solid;
+      border-color: rgb(193, 193, 193);
+      border-width: 1px;
+      margin: 10px 5px 0 5px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px 3px rgb(204, 204, 204);
+    }
+
+    .oliver-text, .friends, .add-friend-button{
+      margin: 0 0 0 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .oliver-profile-pic{
+      width: 150px;
+      
+    }
+
+    .oliver-text{
+      font-weight: bold;
+      padding: 5px 0 0 5px;
+    }
+
+    .friends{
+      font-size: 10px;
+      color: rgb(85, 85, 85);
+      padding: 5px 0 3px 5px;
+    }
+
+    .add-friend-button{
+      margin: 0 0 5px 5px;
+      font-size: 9px;
+      background-color: rgb(36, 88, 217);
+      color: white;
+      border: none;
+      padding: 5px 15px 5px 15px;
+      border-radius: 3px;
+      cursor: pointer;
+      margin-top: 3px;
+    }
+
+    .add-friend-button:active{
+      opacity: 0.5;
+    }
+
+    .google-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .google-logo{
+      display: block;
+      width: 200px;
+      margin-top: 20px;
+    }
+
+    .google-search-bar{
+      border-radius: 20px;
+      width: 400px;
+      margin: 10px 0 10px 0;
+      height: 25px;
+      border: solid;
+      border-color: rgb(194, 194, 194);
+      border-width: 1px;
+      box-shadow: 0 5px 10px 1px rgb(212, 212, 212);
+      padding-left: 15px;
+    }
+
+    .buttons{
+      border: none;
+      background-color: rgb(221, 221, 221);
+      font-size: 11px;
+      padding: 10px 10px 10px 10px;
+      font-weight: bold;
+      margin: 10px 5px 5px 5px;
+      cursor: pointer;
+      transition: 0.15s;
+    }
+
+    .buttons:active{
+      opacity: 0.5;
+    }
+  </style>
+  
+  <DIV style="background-color: red; width: 100px; height: 100px;">
+  </DIV>
+  <div style="background-color: green; width: 100px; height: 100px; border-radius: 50%;"></div>
+
+  <div class="yt-container">
+    <p class="yt">
+      Install YouTube Music</p>
+    <p class="music">
+      Add YouTube Music to your desktop for quick and easy access
+    </p>
+  </div>
+
+  <div class="main-container">
+    <div class="twitter-container">
+    <img class="channel-picture" src="channel-1.jpeg">
+    <p class="twitter-text">What's Happening?</p>
+    <button class="tweet-button">Tweet</button>
+  </div>
+  </div>
+  
+  <div class="fb-main-container">
+    <div class="facebook-container">
+      <img class="oliver-profile-pic" src="channel-1.jpeg">
+      <div>
+        <p class="oliver-text">Oliver</p>
+        <div class="friends">2 mutual friends</div>
+       <button class="add-friend-button">Add Friend</button>
+      </div>
+    </div>
+
+    <div class="facebook-container">
+      <img class="oliver-profile-pic" src="channel-1.jpeg">
+      <div>
+        <p class="oliver-text">Oliver</p>
+        <div class="friends">2 mutual friends</div>
+       <button class="add-friend-button">Add Friend</button>
+      </div>
+    </div>
+
+    <div class="facebook-container">
+      <img class="oliver-profile-pic" src="channel-1.jpeg">
+      <div>
+        <p class="oliver-text">Oliver</p>
+        <div class="friends">2 mutual friends</div>
+       <button class="add-friend-button">Add Friend</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="google-container">
+    <div>
+      <img class="google-logo" src="google-logo.png">
+    </div>
+    
+    <div>
+      <input class="google-search-bar" type="text" placeholder="Search Google or type a URL">
+    </div>
+    <div>
+      <BUTton class="buttons">Google Search</BUTton>
+      <button class="buttons">I'm Feeling Lucky</button>
+    </div>
+  </div>
+
+</body>
+</html>

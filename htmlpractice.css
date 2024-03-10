@@ -1,0 +1,50 @@
+body{
+  padding: 0 5px 10px 5px;
+}
+
+p {
+  font-family: Arial;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.isaac-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.isaac {
+  width: 350px;
+  height: 410px;
+  display: inline-block;
+  
+}
+
+.isaac-text {
+  font-family: Arial;
+  font-size: 20px;
+  text-align: justify;
+  margin: 0;
+  padding: 0 0 0 10px;
+}
+
+.colonial-container{
+  display: grid;
+  gap: 5px;
+  justify-content: center;
+  
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 130px 1fr;
+}
+
+.colonial-txt{
+  margin: 0;
+}
+
+.colonial-img{
+  width: 300px;
+  height: 250px;
+}

@@ -1,0 +1,92 @@
+.main-container{
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid;
+  border-color: rgb(220, 220, 220);
+  border-width: 2px;
+  border-radius: 10px;
+  padding: 0 20px 15px 20px;
+  width: 300px;
+}
+
+.facebook-text{
+  font-weight: 750;
+  color: rgb(25, 25, 254);
+}
+
+.first-input, .second-input{
+  width: 280px;
+  height: 25px;
+  margin: 0 0 5px 0;
+  background-color: rgb(238, 238, 238);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 1px rgb(204, 204, 204);
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+.first-input::placeholder, .second-input::placeholder{
+  font-size: 12px;
+}
+
+.login-button{
+  width: 292px;
+  height: 25px;
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(18, 60, 228);
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.login-button:hover{
+  opacity: 0.8;
+}
+
+.forgot-password{
+  font-size: 10px;
+  color: rgb(25, 25, 254);
+}
+
+.or-underline{
+  display: flex;
+  flex-direction: row;
+  width: 292px;
+  align-items: center;
+  margin: 10px 0 10px 0;
+}
+
+hr{
+  width: 132px;
+}
+
+.or-text{
+  margin: 0 5px 0 5px;
+  font-size: 13px;
+  color: gray;
+}
+
+.create-button{
+  width: 230px;
+  background-color: white;
+  border: solid;
+  border-color: rgb(218, 218, 218);
+  border-width: 2px;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 0 5px 0;
+  cursor: pointer;
+}
